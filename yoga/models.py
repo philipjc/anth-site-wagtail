@@ -4,14 +4,14 @@ from wagtail.core.models import Page
 
 # Create your models here.
 
-class HomePage(Page):
+class YogaIndex(Page):
 
     class Meta:
-        verbose_name = 'Home Page'
+        verbose_name = 'Yoga Index Page'
 
     def get_context(self, request, *args, **kwargs):
 
         # Start context
-        context = super(HomePage, self).get_context(request)
+        context = super(YogaIndex, self).get_context(request)
 
         return context
