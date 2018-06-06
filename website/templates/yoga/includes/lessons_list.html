@@ -4,33 +4,37 @@
 
   <h2>Lessons</h2>
 
-  <div class="yoga-lessons__list">
+  <div class="cards">
 
     {% for l in lessons %}
 
-      <div class="lesson">
+      <article class="card yoga">
 
-        {% image l.lesson_image original as img %}
+        <a href="{{ l.specific.url }}">
 
-        <img src="{{ img.url }}" alt="yoga picture">
+          <picture class="thumbnail">
 
-        <div class="lesson__body">
+            {% image l.lesson_image original as img %}
 
-          <h3>{{ l.lesson_title }}: {{ l.lesson_level }}</h3>
+            <img src="{{ img.url }}" alt="yoga picture">
 
-          <h5>{{ l.lesson_date|date }} {{ l.lesson_date|time }}</h5>
+          </picture>
 
-          <p>{{ l.lesson_desc|slice:":80" }}...</p>
+          <div class="card__content">
 
-          <p>Teacher: {{ l.lesson_teacher }}</p>
+            <h3>{{ l.lesson_title }}: {{ l.lesson_level }}</h3>
 
-        </div>
+            <h5>{{ l.lesson_date|date }} {{ l.lesson_date|time }}</h5>
 
-        <div class="lesson__footer">
-          <a href="{{ l.specific.url }}" class="button">More info</a>
-        </div>
+            <p>{{ l.lesson_desc|slice:":80" }}...</p>
 
-      </div>
+            <p>Teacher: {{ l.lesson_teacher }}</p>
+
+          </div>
+
+        </a>
+
+      </article>
 
     {% endfor %}
 

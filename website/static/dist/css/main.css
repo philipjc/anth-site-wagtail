@@ -1,13 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  background: #eee; }
+  background: lavender; }
 
 .button {
   text-decoration: none;
   width: 160px;
   padding: 10px;
   border: 1px solid; }
+
+section {
+  padding: 40px 40px 0; }
 
 .page-content header {
   position: relative;
@@ -41,30 +44,27 @@ body {
       opacity: 0;
       margin-top: 285px; }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .cards .card {
+    background: #fff;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column; }
+    .cards .card a {
+      text-decoration: none;
+      color: #000; }
+    .cards .card img {
+      width: 100%; }
+    .cards .card__content {
+      padding: 20px; }
+
 .yoga-lessons {
   padding: 40px; }
   .yoga-lessons h2 {
     width: 80%; }
-  .yoga-lessons__list {
-    display: flex;
-    justify-content: space-between; }
-    .yoga-lessons__list .lesson {
-      flex-basis: 40%;
-      display: flex;
-      flex-direction: column; }
-      .yoga-lessons__list .lesson img {
-        width: 100%; }
-      .yoga-lessons__list .lesson__body {
-        border: 1px solid rgba(0, 0, 0, 0.07);
-        padding: 20px; }
-        .yoga-lessons__list .lesson__body h3 {
-          border-bottom: 1px solid rgba(0, 0, 0, 0.09); }
-      .yoga-lessons__list .lesson__footer {
-        border: 1px solid rgba(0, 0, 0, 0.07);
-        padding: 20px; }
-
-section {
-  padding: 40px 40px 0; }
 
 .yoga-lesson h1 {
   padding: 20px;
@@ -86,25 +86,6 @@ section {
   padding: 40px; }
   .health-treatments h2 {
     width: 80%; }
-  .health-treatments .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .health-treatments .cards .card {
-      background: #fff;
-      flex-basis: 30%;
-      display: flex;
-      flex-direction: column; }
-      .health-treatments .cards .card a {
-        text-decoration: none;
-        color: #000; }
-      .health-treatments .cards .card img {
-        width: 100%; }
-      .health-treatments .cards .card__content {
-        padding: 20px; }
-
-section {
-  padding: 40px 40px 0; }
 
 .health-treatment h1 {
   padding: 20px;
