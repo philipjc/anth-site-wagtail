@@ -1,0 +1,39 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<section class="yoga-lessons">
+
+  <h2>Lessons</h2>
+
+  <div class="yoga-lessons__list">
+
+    {% for l in lessons %}
+
+      <div class="lesson">
+
+        {% image l.lesson_image original as img %}
+
+        <img src="{{ img.url }}" alt="yoga picture">
+
+        <div class="lesson__body">
+
+          <h3>{{ l.lesson_title }}: {{ l.lesson_level }}</h3>
+
+          <h5>{{ l.lesson_date|date }} {{ l.lesson_date|time }}</h5>
+
+          <p>{{ l.lesson_desc|slice:":80" }}...</p>
+
+          <p>Teacher: {{ l.lesson_teacher }}</p>
+
+        </div>
+
+        <div class="lesson__footer">
+          <a href="{{ l.specific.url }}" class="button">More info</a>
+        </div>
+
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+</section>

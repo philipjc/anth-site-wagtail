@@ -55,3 +55,8 @@ exports.loadCSS = ({ include, exclude } = {}) => ({
     ]
   },
 });
+
+// SourceMaps
+exports.generateSourceMaps = ({ type }) => ({
+  devtool: type,
+});

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}yogapage{% endblock %}
+
+{% block content %}
+
+  <div class="page-content">
+
+    <header>
+
+      <div class="overlay">
+        <h1>{{ page.page_title }}</h1>
+      </div>
+
+      {% image page.page_header_image original as img %}
+
+      <img class="medium-banner" src="{{ img.url }}" alt="">
+
+    </header>
+
+    {% include "./includes/lessons_list.html" %}
+
+  </div>
+
+  <section>
+    <a href="/" class="button">< Home</a>
+  </section>
+
+{% endblock %}

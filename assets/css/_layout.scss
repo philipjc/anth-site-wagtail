@@ -1,0 +1,49 @@
+.page-content {
+  header {
+    position: relative;
+    width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+
+      &.medium-banner {
+        height: 300px;
+      }
+    }
+
+    .overlay {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
+      width: 100%;
+      margin-top: 85px;
+      text-align: center;
+      color: #fff;
+      transition: ease-in 2s;
+
+      h1 {
+        font-size: 46px;
+        text-shadow: -2px 1px 1px #6d6d77;
+      }
+
+      &__buttons {
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+
+        .button.light {
+          color: #6d6d77;
+        }
+      }
+
+      &.hidden {
+        opacity: 0;
+        margin-top: 285px;
+      }
+    }
+  }
+}

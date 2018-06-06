@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% load static wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}yogalesson{% endblock %}
+
+{% block content %}
+
+  <div class="page-content">
+
+    <header>
+
+      <div class="overlay">
+        <h1>{{ page.page_title }}</h1>
+      </div>
+
+      {% if page.page_header_image %}
+
+        {% image page.page_header_image original as img %}
+
+      {% else %}
+
+        {% image page.lesson_image original as img %}
+
+      {% endif %}
+
+      <img class="medium-banner" src="{{ img.url }}" alt="">
+
+    </header>
+
+    <section class="yoga-lesson">
+
+      <h1>Yoga lesson: {{ page.lesson_title }}, {{ page.lesson_level }}</h1>
+
+      <div class="lesson">
+        <div class="lesson__info">
+          <p>Teacher: {{ page.lesson_teacher }}</p>
+          <p>Date: {{ page.lesson_date|date }}</p>
+          <p>Time: {{ page.lesson_date|time }}</p>
+          <p>Location: {{ page.loc_name }}</p>
+
+          <p>{{ page.lesson_desc }}</p>
+        </div>
+        <div class="lesson__map">
+          <img src="http://placehold.it/300x200" srcset="http://placehold.it/300x200 300w" sizes="100vw"
+               alt="Placeholder"/>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <a href="/yoga" class="button">< Lessons</a>
+    </section>
+
+  </div>
+
+{% endblock %}

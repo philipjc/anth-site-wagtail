@@ -1,0 +1,36 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<section class="health-treatments">
+
+  <h2>Treatments</h2>
+
+  <div class="cards">
+
+    {% for t in treatments %}
+
+      <article class="card treatment">
+
+        <a href="{{ t.specific.url }}">
+
+          <picture class="thumbnail">
+            {% image t.treatment_image original as img %}
+
+            <img src="{{ img.url }}" alt="treatment picture">
+          </picture>
+
+          <div class="card__content">
+            <h2>{{ t.treatment_title }}</h2>
+
+            <p>{{ t.treatment_desc }}</p>
+
+          </div>
+
+        </a>
+
+      </article>
+
+    {% endfor %}
+
+  </div>
+
+</section>

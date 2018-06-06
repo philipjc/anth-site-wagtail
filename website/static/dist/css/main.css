@@ -1,2 +1,121 @@
 body {
-  background: tomato; }
+  margin: 0;
+  padding: 0;
+  background: #eee; }
+
+.button {
+  text-decoration: none;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid; }
+
+.page-content header {
+  position: relative;
+  width: 100%; }
+  .page-content header img {
+    width: 100%;
+    object-fit: cover; }
+    .page-content header img.medium-banner {
+      height: 300px; }
+  .page-content header .overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 85px;
+    text-align: center;
+    color: #fff;
+    transition: ease-in 2s; }
+    .page-content header .overlay h1 {
+      font-size: 46px;
+      text-shadow: -2px 1px 1px #6d6d77; }
+    .page-content header .overlay__buttons {
+      padding: 20px;
+      display: flex;
+      justify-content: space-evenly; }
+      .page-content header .overlay__buttons .button.light {
+        color: #6d6d77; }
+    .page-content header .overlay.hidden {
+      opacity: 0;
+      margin-top: 285px; }
+
+.yoga-lessons {
+  padding: 40px; }
+  .yoga-lessons h2 {
+    width: 80%; }
+  .yoga-lessons__list {
+    display: flex;
+    justify-content: space-between; }
+    .yoga-lessons__list .lesson {
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column; }
+      .yoga-lessons__list .lesson img {
+        width: 100%; }
+      .yoga-lessons__list .lesson__body {
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        padding: 20px; }
+        .yoga-lessons__list .lesson__body h3 {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.09); }
+      .yoga-lessons__list .lesson__footer {
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        padding: 20px; }
+
+section {
+  padding: 40px 40px 0; }
+
+.yoga-lesson h1 {
+  padding: 20px;
+  background: lavender; }
+
+.yoga-lesson .lesson {
+  display: flex;
+  margin-top: 40px; }
+  .yoga-lesson .lesson__info {
+    flex: 1;
+    padding: 20px;
+    background: lavender; }
+  .yoga-lesson .lesson__map {
+    flex: 1; }
+    .yoga-lesson .lesson__map img {
+      width: 100%; }
+
+.health-treatments {
+  padding: 40px; }
+  .health-treatments h2 {
+    width: 80%; }
+  .health-treatments .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .health-treatments .cards .card {
+      background: #fff;
+      flex-basis: 30%;
+      display: flex;
+      flex-direction: column; }
+      .health-treatments .cards .card a {
+        text-decoration: none;
+        color: #000; }
+      .health-treatments .cards .card img {
+        width: 100%; }
+      .health-treatments .cards .card__content {
+        padding: 20px; }
+
+section {
+  padding: 40px 40px 0; }
+
+.health-treatment h1 {
+  padding: 20px;
+  background: lavender; }
+
+.health-treatment .treatment {
+  display: flex;
+  margin-top: 40px; }
+  .health-treatment .treatment__info {
+    flex: 1;
+    padding: 20px;
+    background: lavender; }
+
+/*# sourceMappingURL=main.css.map*/

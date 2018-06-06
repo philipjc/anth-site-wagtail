@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+
+.button {
+  text-decoration: none;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+@import "./layout.scss";
+@import "./home/home.scss";
+@import "./yoga/yoga.scss";
+@import "./health/health.scss";
