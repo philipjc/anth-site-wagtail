@@ -58,47 +58,27 @@ section {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /* Styles */
-  .page-content {
-    position: relative; }
-    .page-content header {
-      position: relative;
-      width: 100%; }
-      .page-content header img {
-        width: 100%;
-        object-fit: cover; }
-        .page-content header img.medium-banner {
-          height: 300px; }
-      .page-content header .overlay {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        width: 100%;
-        margin-top: 145px;
-        text-align: center;
-        color: #fff;
-        transition: ease-in 2s; }
-        .page-content header .overlay h1 {
-          font-size: 46px;
-          text-shadow: -2px 1px 1px #6d6d77; }
-        .page-content header .overlay__buttons {
-          padding: 20px;
-          display: flex;
-          justify-content: space-evenly; }
-          .page-content header .overlay__buttons .button.light {
-            color: #6d6d77; }
-        .page-content header .overlay.hidden {
-          opacity: 0;
-          margin-top: 285px; }
-    .page-content .body {
-      display: flex;
-      flex-direction: column;
-      padding: 40px; }
-      .page-content .body .column {
-        flex: 1;
-        padding: 20px;
-        line-height: 1.6; } }
+  .page-content .overlay {
+    flex-direction: column !important;
+    margin-top: 95px !important; }
+  .page-content .body {
+    flex-direction: column;
+    padding: 40px 5px; } }
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  /* Styles */
+  .page-content .overlay {
+    flex-direction: column !important;
+    margin-top: 130px !important; }
+  .page-content .body {
+    flex-direction: column;
+    padding: 40px 5px; } }
+
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+  /* Styles */
+  .page-content .overlay {
+    flex-direction: column !important;
+    margin-top: 150px !important; } }
 
 /* List cards */
 .cards {
@@ -194,7 +174,6 @@ section {
 
 .yoga-lesson .lesson {
   display: flex;
-  flex-direction: column;
   margin-top: 40px; }
   .yoga-lesson .lesson__info {
     flex: 1;
@@ -204,6 +183,12 @@ section {
     flex: 1; }
     .yoga-lesson .lesson__map img {
       width: 100%; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles */
+  .yoga-lesson .lesson {
+    flex-direction: column; } }
 
 .health-treatments {
   padding: 40px; }

@@ -70,67 +70,47 @@ section {
   /* Styles */
 
   .page-content {
-    position: relative;
 
-    header {
-      position: relative;
-      width: 100%;
-
-      img {
-        width: 100%;
-        object-fit: cover;
-
-        &.medium-banner {
-          height: 300px;
-        }
-      }
-
-      .overlay {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-
-        width: 100%;
-        margin-top: 145px;
-        text-align: center;
-        color: #fff;
-        transition: ease-in 2s;
-
-        h1 {
-          font-size: 46px;
-          text-shadow: -2px 1px 1px #6d6d77;
-        }
-
-        &__buttons {
-          padding: 20px;
-          display: flex;
-          justify-content: space-evenly;
-
-          .button.light {
-            color: #6d6d77;
-          }
-        }
-
-        &.hidden {
-          opacity: 0;
-          margin-top: 285px;
-        }
-      }
+    .overlay {
+      flex-direction: column !important;
+      margin-top: 95px !important;
     }
 
     .body {
-      display: flex;
       flex-direction: column;
-      padding: 40px;
-
-      .column {
-        flex: 1;
-        padding: 20px;
-        line-height: 1.6;
-      }
+      padding: 40px 5px;
     }
   }
 
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  /* Styles */
+
+  .page-content {
+
+    .overlay {
+      flex-direction: column !important;
+      margin-top: 130px !important;
+    }
+
+    .body {
+      flex-direction: column;
+      padding: 40px 5px;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+  /* Styles */
+
+  .page-content {
+
+    .overlay {
+      flex-direction: column !important;
+      margin-top: 150px !important;
+    }
+
+  }
 }

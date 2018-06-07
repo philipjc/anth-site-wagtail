@@ -7,7 +7,6 @@
   }
 }
 
-
 .yoga-lesson {
 
   h1 {
@@ -17,7 +16,6 @@
 
   .lesson {
     display: flex;
-    flex-direction: column;
     margin-top: 40px;
 
     &__info {
@@ -34,4 +32,20 @@
       }
     }
   }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Styles */
+
+
+  .yoga-lesson {
+
+    .lesson {
+      flex-direction: column;
+
+    }
+
+  }
+
 }
