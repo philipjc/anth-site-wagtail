@@ -2,6 +2,10 @@ body {
   margin: 0;
   padding: 0;
   background: lavender;
+
+  font-family: 'Open Sans', sans-serif;
+
+  box-sizing: border-box;
 }
 
 .button {
@@ -12,6 +16,8 @@ body {
 }
 
 @import "./layout.scss";
+@import "./cards.scss";
+@import "./footer.scss";
 @import "./home/home.scss";
 @import "./yoga/yoga.scss";
 @import "./health/health.scss";

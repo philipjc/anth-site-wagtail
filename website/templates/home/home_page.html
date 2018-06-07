@@ -6,25 +6,48 @@
 
 {% block content %}
 
-<div class="page-content">
+  <div class="page-content">
 
-  <header>
+    <header>
 
-    <div class="overlay hidden">
-      <h1>{{ page.page_title }}</h1>
+      <div class="overlay hidden">
+        <h1>{{ page.page_title }}</h1>
 
-      <div class="overlay__buttons">
-        <a class="button light" href="/yoga">Yoga</a>
-        <a class="button light" href="/health">Health</a>
+        <div class="overlay__buttons">
+          <a class="button light" href="/yoga">Yoga</a>
+          <a class="button light" href="/health">Health</a>
+        </div>
       </div>
-    </div>
 
-    {% image page.page_header_image original as img %}
+      {% image page.page_header_image original as img %}
 
-    <img src="{{ img.url }}" alt="">
+      <img src="{{ img.url }}" alt="">
 
-  </header>
+    </header>
 
-</div>
+    <section class="body">
+
+      <div class="column">
+        <h2>Welcome to, you're drishti</h2>
+
+        <p>{{ page.page_intro }}</p>
+      </div>
+
+      <div class="column">
+        <h2>What is, you're drishti</h2>
+
+        <p>Drishti, or focused gaze, is a means for developing concentrated intention.
+          It relates to the fifth limb of yoga (pratyahara) concerning sense withdrawal, as well as the sixth limb
+          dharana relating to concentration.
+        </p>
+        <p>
+          The sixth limb of yoga dharana (concentration), includes maintaining drishti during yoga practice in order to
+          ensure dhyana meditation will occur.
+        </p>
+      </div>
+
+    </section>
+
+  </div>
 
 {% endblock %}

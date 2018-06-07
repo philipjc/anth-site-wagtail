@@ -17,12 +17,20 @@
 
   .treatment {
     display: flex;
+    flex-direction: column;
     margin-top: 40px;
+
+    &__desc {
+      flex: 1;
+    }
 
     &__info {
       flex: 1;
-      padding: 20px;
       background: lavender;
+
+      > p {
+        padding: 25px;
+      }
     }
   }
 }
