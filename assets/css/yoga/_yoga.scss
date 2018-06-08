@@ -27,6 +27,10 @@
     &__map {
       flex: 1;
 
+      &__google {
+        min-height: 400px;
+      }
+
       img {
         width: 100%;
       }

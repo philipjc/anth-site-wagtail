@@ -21,11 +21,15 @@ class Common {
    */
   addEventListeners() {
 
-    this.readMore.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        this.increaseCardHeight(e, btn);
+    if (this.readMore) {
+
+      this.readMore.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          this.increaseCardHeight(e, btn);
+        });
       });
-    });
+
+    }
 
   }
 
@@ -59,9 +63,11 @@ class Common {
    */
   removeEventListeners() {
 
-    this.readMore.forEach(btn => {
-      btn.removeEventListener('click', () => {});
-    });
+    if (this.readMore) {
+      this.readMore.forEach(btn => {
+        btn.removeEventListener('click', () => {});
+      });
+    }
 
   }
 

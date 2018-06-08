@@ -46,8 +46,9 @@
           <p>{{ page.lesson_desc }}</p>
         </div>
         <div class="lesson__map">
-          <img src="http://placehold.it/300x200" srcset="http://placehold.it/300x200 300w" sizes="100vw"
-               alt="Placeholder"/>
+{#          <img src="http://placehold.it/300x200" srcset="http://placehold.it/300x200 300w" sizes="100vw"#}
+{#               alt="Placeholder"/>#}
+          <div class="lesson__map__google" id="google-map"></div>
         </div>
       </div>
 
@@ -62,5 +63,11 @@
   <section>
     <a href="/yoga" class="button">< Lessons</a>
   </section>
+
+{% endblock %}
+
+{% block extra_js %}
+
+  {% include 'partials/google_map.html' with lat=page.loc_lat lon=page.loc_lng zoom=self.map_zoom %}
 
 {% endblock %}
