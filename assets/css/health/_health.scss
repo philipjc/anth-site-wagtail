@@ -34,3 +34,33 @@
     }
   }
 }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* Styles */
+
+  .health-treatments {
+    padding: 20px;
+  }
+
+  .health-treatment {
+
+    h1 {
+      padding: 0;
+    }
+
+    .treatment {
+      margin-top: 5px;
+
+      &__info {
+        flex: 1;
+        background: lavender;
+
+        > p {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

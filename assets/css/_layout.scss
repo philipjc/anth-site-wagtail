@@ -65,15 +65,43 @@ section {
   }
 }
 
+/* iPhone 5 / SE */
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 736px) {
   /* Styles */
+
+  section {
+    padding: 20px;
+  }
 
   .page-content {
 
-    .overlay {
-      flex-direction: column !important;
-      margin-top: 95px !important;
+    header {
+
+      img {
+
+        &.medium-banner {
+          height: 55px !important;
+        }
+      }
+
+      .overlay {
+        flex-direction: column !important;
+        margin-top: 125px !important;
+
+        &.yoga {
+          margin-top: -5px !important;
+        }
+
+        &.health {
+          margin-top: -5px !important;
+        }
+
+        h1 {
+          margin-top: -5px !important;
+        }
+
+      }
     }
 
     .body {
@@ -81,36 +109,44 @@ section {
       padding: 40px 5px;
     }
   }
-
 }
 
+/* iPhone 6/7/8 */
 @media only screen and (min-width: 375px) and (max-width: 667px) {
   /* Styles */
 
   .page-content {
 
-    .overlay {
-      flex-direction: column !important;
-      margin-top: 130px !important;
+    header {
+
+      .overlay {
+        margin-top: 165px !important;
+
+        h1 {
+          margin-top: -5px !important;
+        }
+
+      }
     }
 
-    .body {
-      flex-direction: column;
-      padding: 40px 5px;
-    }
   }
-
 }
 
+/* iPhone 6/7/8/ plus */
 @media only screen and (min-width: 414px) and (max-width: 736px) {
   /* Styles */
 
   .page-content {
 
-    .overlay {
-      flex-direction: column !important;
-      margin-top: 150px !important;
-    }
+    header {
 
+      .overlay {
+        margin-top: 190px !important;
+
+        h1 {
+          margin-top: -5px !important;
+        }
+      }
+    }
   }
 }

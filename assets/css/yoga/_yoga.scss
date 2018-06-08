@@ -35,15 +35,27 @@
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 736px) {
   /* Styles */
 
+  .yoga-lessons {
+    padding: 20px;
+  }
 
   .yoga-lesson {
+    padding: 20px;
+
+    h1 {
+      padding: 0;
+    }
 
     .lesson {
       flex-direction: column;
+      margin-top: 5px;
 
+      &__info {
+        padding: 0;
+      }
     }
 
   }
