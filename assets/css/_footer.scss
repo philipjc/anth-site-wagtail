@@ -21,6 +21,15 @@
 
   .contact {
     flex: 1;
+
+    p {
+      margin: 0 0 10px 0;
+    }
+
+    svg {
+      font-size: 40px;
+      color: #3B5998;
+    }
   }
 }
 

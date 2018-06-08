@@ -11,8 +11,22 @@ body {
   padding: 10px;
   border: 1px solid; }
 
+a:focus {
+  color: #6767e1; }
+
+a:active {
+  color: #6767e1; }
+
+a:visited {
+  color: #6767e1; }
+
+a:hover {
+  color: #2525bd; }
+
 section {
   padding: 50px 40px 75px 40px; }
+  section.breadcrumb {
+    display: none; }
 
 .page-content {
   position: relative; }
@@ -61,6 +75,11 @@ section {
   /* Styles */
   section {
     padding: 20px; }
+  .breadcrumb {
+    display: block !important;
+    padding: 5px 20px; }
+    .breadcrumb a {
+      text-decoration: none; }
   .page-content header img.medium-banner {
     height: 55px !important; }
   .page-content header .overlay {
@@ -105,35 +124,37 @@ section {
     .cards .card a {
       text-decoration: none;
       color: #000; }
-    .cards .card img {
-      object-fit: cover;
-      width: 100%; }
-    .cards .card__content {
-      padding: 20px; }
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* Styles */
-  .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .cards .card {
-      background: #fff;
-      flex-basis: 30%;
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 40px; }
-      .cards .card a {
-        text-decoration: none;
-        color: #000; }
-      .cards .card img {
+    .cards .card picture {
+      display: flex; }
+      .cards .card picture img {
         object-fit: cover;
         width: 100%;
-        height: 100px; }
+        height: 220px; }
+    .cards .card__content {
+      padding: 20px; }
+    .cards .card .read-more {
+      display: none; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 731px) {
+  /* Styles */
+  .cards {
+    flex-direction: column; }
+    .cards .card {
+      margin-bottom: 40px; }
+      .cards .card picture img {
+        object-fit: cover;
+        height: 100px;
+        width: 100%; }
       .cards .card__content {
-        padding: 20px; } }
+        padding: 20px; }
+        .cards .card__content > p.small {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+      .cards .card .read-more {
+        display: block !important;
+        padding: 0 20px 20px; } }
 
 .footer {
   display: flex;
@@ -153,6 +174,11 @@ section {
       color: #000; }
   .footer .contact {
     flex: 1; }
+    .footer .contact p {
+      margin: 0 0 10px 0; }
+    .footer .contact svg {
+      font-size: 40px;
+      color: #3B5998; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 736px) {
@@ -184,7 +210,7 @@ section {
     width: 80%; }
 
 .yoga-lesson h1 {
-  padding: 20px;
+  padding: 20px 0;
   background: lavender; }
 
 .yoga-lesson .lesson {
@@ -192,12 +218,16 @@ section {
   margin-top: 40px; }
   .yoga-lesson .lesson__info {
     flex: 1;
-    padding: 20px;
+    padding: 20px 20px 20px 0;
     background: lavender; }
   .yoga-lesson .lesson__map {
     flex: 1; }
     .yoga-lesson .lesson__map img {
       width: 100%; }
+
+.yoga-lesson .contact a {
+  text-decoration: none;
+  color: #6767e1; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 736px) {
@@ -220,7 +250,7 @@ section {
     width: 80%; }
 
 .health-treatment h1 {
-  padding: 20px;
+  padding: 20px 0;
   background: lavender; }
 
 .health-treatment .treatment {
@@ -234,6 +264,10 @@ section {
     background: lavender; }
     .health-treatment .treatment__info > p {
       padding: 25px; }
+
+.health-treatment .contact a {
+  text-decoration: none;
+  color: #6767e1; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 736px) {

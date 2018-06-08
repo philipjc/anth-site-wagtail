@@ -15,6 +15,22 @@ body {
   border: 1px solid;
 }
 
+a:focus {
+  color: darken(#bcbcf2, 20%);
+}
+
+a:active {
+  color: darken(#bcbcf2, 20%);
+}
+
+a:visited {
+  color: darken(#bcbcf2, 20%);
+}
+
+a:hover {
+  color: darken(#bcbcf2, 40%);
+}
+
 @import "./layout.scss";
 @import "./cards.scss";
 @import "./footer.scss";
