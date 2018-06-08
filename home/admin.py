@@ -10,4 +10,5 @@ HomePage.content_panels = HomePage.content_panels + [
     FieldPanel('page_title'),
     ImageChooserPanel('page_header_image'),
     FieldPanel('page_intro'),
+    StreamFieldPanel('body'),
 ]

@@ -1,0 +1,15 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="sf sf-general">
+
+    {% for child in content %}
+
+        {% if child.block_type == 'content' %}
+
+            {% include "streamfield/blocks/content.html" with block=child.value %}
+
+        {% endif %}
+
+    {% endfor %}
+
+</div>

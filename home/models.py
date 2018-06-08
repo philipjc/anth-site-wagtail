@@ -1,9 +1,13 @@
 from django.db import models
 from wagtail.core.models import Page
-from itertools import chain
+from wagtail.core.blocks import RichTextBlock
+from wagtail.core.fields import StreamField
 
 from yoga.models import YogaLesson
 from health.models import HealthTreatment
+from utils.models import GeneralStreamBlock
+
+from itertools import chain
 
 
 # Home Index
@@ -23,6 +27,8 @@ class HomePage(Page):
     )
 
     page_intro = models.CharField(max_length=500, null=True)
+
+    body = StreamField(GeneralStreamBlock, blank=True)
 
     def get_context(self, request, *args, **kwargs):
 
