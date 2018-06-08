@@ -1,8 +1,10 @@
 from django.db import models
 from wagtail.core.models import Page
 from wagtail.snippets.models import register_snippet
-from modelcluster.fields import ParentalManyToManyField
+from wagtail.core.fields import StreamField
 
+from modelcluster.fields import ParentalManyToManyField
+from utils.models import GeneralStreamBlock
 
 # Categories
 @register_snippet
@@ -36,6 +38,8 @@ class HealthTreatment(Page):
     treatment_desc = models.CharField(max_length=500, null=True)
 
     categories = ParentalManyToManyField('health.HealthCategory', blank=True)
+
+    body = StreamField(GeneralStreamBlock, blank=True)
 
     def get_context(self, request, *args, **kwargs):
 

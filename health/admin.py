@@ -1,11 +1,11 @@
 from .models import *
 from django import forms
 
+from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.images.edit_handlers import ImageChooserPanel
+
 from wagtail.admin.edit_handlers import StreamFieldPanel, InlinePanel, FieldPanel, \
     MultiFieldPanel
-
-from wagtail.images.edit_handlers import ImageChooserPanel
-from wagtail.snippets.edit_handlers import SnippetChooserPanel
 
 # Categorie
 HealthCategory.panels = [
@@ -18,6 +18,7 @@ HealthTreatment.content_panels = HealthTreatment.content_panels + [
     FieldPanel('treatment_title'),
     FieldPanel('treatment_desc'),
     FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
+    StreamFieldPanel('body'),
 ]
 
 # Index Page

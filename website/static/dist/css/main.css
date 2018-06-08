@@ -1,1 +1,291 @@
-body{margin:0;padding:0;background:#e6e6fa;font-family:Open Sans,sans-serif;box-sizing:border-box}.button{text-decoration:none;width:160px;padding:10px;border:1px solid}a:active,a:focus,a:visited{color:#6767e1}a:hover{color:#2525bd}section{padding:50px 40px 75px}section.breadcrumb{display:none}section.intro{padding:40px 40px 0}.page-content{position:relative}.page-content header{position:relative;width:100%}.page-content header img{width:100%;object-fit:cover}.page-content header img.medium-banner{height:300px}.page-content header .overlay{position:absolute;display:flex;flex-direction:column;justify-content:center;align-content:center;width:100%;margin-top:85px;text-align:center;color:#fff;transition:2s ease-in}.page-content header .overlay h1{font-size:46px;text-shadow:-2px 1px 1px #6d6d77}.page-content header .overlay__buttons{padding:20px;display:flex;justify-content:space-evenly}.page-content header .overlay__buttons .button.light{color:#6d6d77}.page-content header .overlay.hidden{opacity:0;margin-top:285px}.page-content .body{display:flex;padding:40px}.page-content .body .column{flex:1;padding:20px;line-height:1.6}@media only screen and (min-width:320px) and (max-width:736px){section{padding:20px}.breadcrumb{display:block!important;padding:5px 20px}.breadcrumb a{text-decoration:none}.page-content header img.medium-banner{height:55px!important}.page-content header .overlay{flex-direction:column!important;margin-top:125px!important}.page-content header .overlay.health,.page-content header .overlay.yoga,.page-content header .overlay h1{margin-top:-5px!important}.page-content .body{flex-direction:column;padding:40px 5px}}@media only screen and (min-width:375px) and (max-width:667px){.page-content header .overlay{margin-top:165px!important}.page-content header .overlay h1{margin-top:-5px!important}}@media only screen and (min-width:414px) and (max-width:736px){.page-content header .overlay{margin-top:190px!important}.page-content header .overlay h1{margin-top:-5px!important}}.cards{display:flex;flex-wrap:wrap;justify-content:space-between}.cards .card{background:#fff;flex-basis:30%;display:flex;flex-direction:column}.cards .card a{text-decoration:none;color:#000}.cards .card picture{display:flex}.cards .card picture img{object-fit:cover;width:100%;height:220px}.cards .card__content{padding:20px}.cards .card .read-more{display:none}@media only screen and (min-width:320px) and (max-width:731px){.cards{flex-direction:column}.cards .card{margin-bottom:40px}.cards .card picture img{object-fit:cover;height:100px;width:100%}.cards .card__content{padding:20px}.cards .card__content>p.small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.cards .card .read-more{display:block!important;padding:0 20px 20px}}.footer{display:flex;width:100%;padding:60px 0;background:#bcbcf2;position:relative;bottom:0}.footer .column{flex:1;display:flex;flex-direction:column;line-height:1.6;padding:20px 40px}.footer .column a{text-decoration:none;color:#000}.footer .contact{flex:1}.footer .contact p{margin:0 0 10px}.footer .contact svg{font-size:40px;color:#3b5998}@media only screen and (min-width:320px) and (max-width:736px){.footer{display:flex;flex-direction:column;width:100%;padding:0!important;background:#bcbcf2;position:relative;bottom:0}.footer .column{flex:1;display:flex;flex-direction:column;line-height:1.6;padding:20px!important}.footer .column a{text-decoration:none;color:#000}.footer .contact{flex:1}}.yoga-lessons{position:relative;padding:40px}.yoga-lessons h2{width:80%}.yoga-lesson h1{padding:20px 0;background:#e6e6fa}.yoga-lesson .lesson{display:flex;margin-top:40px}.yoga-lesson .lesson__info{flex:1;padding:20px 20px 20px 0;background:#e6e6fa}.yoga-lesson .lesson__map{flex:1}.yoga-lesson .lesson__map__google{min-height:400px}.yoga-lesson .lesson__map img{width:100%}.yoga-lesson .contact a{text-decoration:none;color:#6767e1}@media only screen and (min-width:320px) and (max-width:736px){.yoga-lesson,.yoga-lessons{padding:20px}.yoga-lesson h1{padding:0}.yoga-lesson .lesson{flex-direction:column;margin-top:5px}.yoga-lesson .lesson__info{padding:0}}.health-treatments{padding:40px}.health-treatments h2{width:80%}.health-treatment h1{padding:20px 0;background:#e6e6fa}.health-treatment .treatment{display:flex;flex-direction:column;margin-top:40px}.health-treatment .treatment__desc{flex:1}.health-treatment .treatment__info{flex:1;background:#e6e6fa}.health-treatment .treatment__info>p{padding:25px}.health-treatment .contact a{text-decoration:none;color:#6767e1}@media only screen and (min-width:320px) and (max-width:736px){.health-treatments{padding:20px}.health-treatment h1{padding:0}.health-treatment .treatment{margin-top:5px}.health-treatment .treatment__info{flex:1;background:#e6e6fa}.health-treatment .treatment__info>p{padding:5px}}
+body {
+  margin: 0;
+  padding: 0;
+  background: lavender;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box; }
+
+.button {
+  text-decoration: none;
+  width: 160px;
+  padding: 10px;
+  border: 1px solid; }
+
+a:focus {
+  color: #6767e1; }
+
+a:active {
+  color: #6767e1; }
+
+a:visited {
+  color: #6767e1; }
+
+a:hover {
+  color: #2525bd; }
+
+section {
+  padding: 50px 40px 75px 40px; }
+  section.breadcrumb {
+    display: none; }
+  section.intro {
+    padding: 40px 40px 0; }
+
+.page-content {
+  position: relative; }
+  .page-content header {
+    position: relative;
+    width: 100%; }
+    .page-content header img {
+      width: 100%;
+      object-fit: cover; }
+      .page-content header img.medium-banner {
+        height: 300px; }
+    .page-content header .overlay {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      margin-top: 85px;
+      text-align: center;
+      color: #fff;
+      transition: ease-in 2s; }
+      .page-content header .overlay h1 {
+        font-size: 46px;
+        text-shadow: -2px 1px 1px #6d6d77; }
+      .page-content header .overlay__buttons {
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly; }
+        .page-content header .overlay__buttons .button.light {
+          color: #6d6d77; }
+      .page-content header .overlay.hidden {
+        opacity: 0;
+        margin-top: 285px; }
+  .page-content .body {
+    display: flex;
+    padding: 40px; }
+    .page-content .body .column {
+      flex: 1;
+      padding: 20px;
+      line-height: 1.6; }
+
+/* iPhone 5 / SE */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* Styles */
+  section {
+    padding: 20px; }
+  .breadcrumb {
+    display: block !important;
+    padding: 5px 20px; }
+    .breadcrumb a {
+      text-decoration: none; }
+  .page-content header img.medium-banner {
+    height: 55px !important; }
+  .page-content header .overlay {
+    flex-direction: column !important;
+    margin-top: 125px !important; }
+    .page-content header .overlay.yoga {
+      margin-top: -5px !important; }
+    .page-content header .overlay.health {
+      margin-top: -5px !important; }
+    .page-content header .overlay h1 {
+      margin-top: -5px !important; }
+  .page-content .body {
+    flex-direction: column;
+    padding: 40px 5px; } }
+
+/* iPhone 6/7/8 */
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  /* Styles */
+  .page-content header .overlay {
+    margin-top: 165px !important; }
+    .page-content header .overlay h1 {
+      margin-top: -5px !important; } }
+
+/* iPhone 6/7/8/ plus */
+@media only screen and (min-width: 414px) and (max-width: 736px) {
+  /* Styles */
+  .page-content header .overlay {
+    margin-top: 190px !important; }
+    .page-content header .overlay h1 {
+      margin-top: -5px !important; } }
+
+/* List cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .cards .card {
+    background: #fff;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column; }
+    .cards .card a {
+      text-decoration: none;
+      color: #000; }
+    .cards .card picture {
+      display: flex; }
+      .cards .card picture img {
+        object-fit: cover;
+        width: 100%;
+        height: 220px; }
+    .cards .card__content {
+      padding: 20px; }
+    .cards .card .read-more {
+      display: none; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 731px) {
+  /* Styles */
+  .cards {
+    flex-direction: column; }
+    .cards .card {
+      margin-bottom: 40px; }
+      .cards .card picture img {
+        object-fit: cover;
+        height: 100px;
+        width: 100%; }
+      .cards .card__content {
+        padding: 20px; }
+        .cards .card__content > p.small {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
+      .cards .card .read-more {
+        display: block !important;
+        padding: 0 20px 20px; } }
+
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 60px 0px;
+  background: #bcbcf2;
+  position: relative;
+  bottom: 0; }
+  .footer .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    padding: 20px 40px; }
+    .footer .column a {
+      text-decoration: none;
+      color: #000; }
+  .footer .contact {
+    flex: 1; }
+    .footer .contact p {
+      margin: 0 0 10px 0; }
+    .footer .contact svg {
+      font-size: 40px;
+      color: #3B5998; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* Styles */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 !important;
+    background: #bcbcf2;
+    position: relative;
+    bottom: 0; }
+    .footer .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      padding: 20px 20px !important; }
+      .footer .column a {
+        text-decoration: none;
+        color: #000; }
+    .footer .contact {
+      flex: 1; } }
+
+.yoga-lessons {
+  position: relative;
+  padding: 40px; }
+  .yoga-lessons h2 {
+    width: 80%; }
+
+.yoga-lesson h1 {
+  padding: 20px 0;
+  background: lavender; }
+
+.yoga-lesson .lesson {
+  display: flex;
+  margin-top: 40px; }
+  .yoga-lesson .lesson__info {
+    flex: 1;
+    padding: 20px 20px 20px 0;
+    background: lavender; }
+  .yoga-lesson .lesson__map {
+    flex: 1; }
+    .yoga-lesson .lesson__map__google {
+      min-height: 400px; }
+    .yoga-lesson .lesson__map img {
+      width: 100%; }
+
+.yoga-lesson .contact a {
+  text-decoration: none;
+  color: #6767e1; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* Styles */
+  .yoga-lessons {
+    padding: 20px; }
+  .yoga-lesson {
+    padding: 20px; }
+    .yoga-lesson h1 {
+      padding: 0; }
+    .yoga-lesson .lesson {
+      flex-direction: column;
+      margin-top: 5px; }
+      .yoga-lesson .lesson__info {
+        padding: 0; } }
+
+.health-treatments {
+  padding: 40px; }
+  .health-treatments h2 {
+    width: 80%; }
+
+.health-treatment h1 {
+  padding: 20px 0;
+  background: lavender; }
+
+.health-treatment .treatment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px; }
+  .health-treatment .treatment__desc {
+    flex: 1; }
+  .health-treatment .treatment__info {
+    flex: 1;
+    background: lavender; }
+    .health-treatment .treatment__info > p {
+      padding: 25px; }
+
+.health-treatment .contact a {
+  text-decoration: none;
+  color: #6767e1; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* Styles */
+  .health-treatments {
+    padding: 20px; }
+  .health-treatment h1 {
+    padding: 0; }
+  .health-treatment .treatment {
+    margin-top: 5px; }
+    .health-treatment .treatment__info {
+      flex: 1;
+      background: lavender; }
+      .health-treatment .treatment__info > p {
+        padding: 5px; } }
+
+/*# sourceMappingURL=main.css.map*/

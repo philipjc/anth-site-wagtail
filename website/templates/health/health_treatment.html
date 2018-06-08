@@ -35,15 +35,11 @@
         </div>
 
         <div class="treatment__info">
-          <ul>
-            <li>Health info about massage</li>
-            <li>Health info about massage</li>
-            <li>Health info about massage</li>
-            <li>Health info about massage</li>
-            <li>Health info about massage</li>
-          </ul>
+          {% if page.body %}
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet consequuntur, cupiditate deleniti dicta distinctio, dolore ducimus et molestiae molestias necessitatibus nemo optio quo recusandae repudiandae similique sint tempore?</p>
+            {% include 'streamfield/general.html' with content=page.body %}
+
+          {% endif %}
         </div>
 
       </div>
