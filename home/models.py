@@ -26,7 +26,11 @@ class HomePage(Page):
         related_name='+',
     )
 
+    page_intro_header = models.CharField(max_length=200, null=True, blank=True)
+
     page_intro = models.CharField(max_length=500, null=True)
+
+    body_header = models.CharField(max_length=200, null=True, blank=True)
 
     body = StreamField(GeneralStreamBlock, blank=True)
 

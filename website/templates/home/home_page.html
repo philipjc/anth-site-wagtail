@@ -28,9 +28,17 @@
     <section class="body">
 
       <div class="column">
-        <h2>Welcome to, you're drishti</h2>
+
+        {% if page.page_intro_header %}
+
+          <h2>{{ page.page_intro_header }}</h2>
+
+        {% else %}
+          <h2>Welcome to, you're drishti</h2>
+        {% endif %}
 
         <p>{{ page.page_intro }}</p>
+      
       </div>
 
       <div class="column">
