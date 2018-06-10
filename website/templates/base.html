@@ -1,4 +1,4 @@
-{% load static wagtailuserbar footer %}
+{% load static wagtailuserbar footer menu %}
 
 <!DOCTYPE html>
 <html class="no-js">
@@ -28,6 +28,8 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+
+        {% menu %}
 
         {% block content %}{% endblock %}
 
