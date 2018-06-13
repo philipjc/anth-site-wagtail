@@ -25,7 +25,7 @@ class Common {
 
       this.readMore.forEach(btn => {
         btn.addEventListener('click', (e) => {
-          this.increaseCardHeight(e, btn);
+          this.changeCardHeight(e, btn);
         });
       });
 
@@ -37,24 +37,32 @@ class Common {
   /**
    *
    */
-  increaseCardHeight(e, clickedButton) {
+  changeCardHeight(e, clickedButton) {
 
     const targetClasses = e.target.previousSibling.childNodes[3].children[1].classList;
 
+    console.log(e);
+
+    const screenScrolled = e.srcElement.offsetTop;
+
     targetClasses.contains('small')
-      ? this.increaseCard(targetClasses, clickedButton)
-      : this.decreaseCard(targetClasses, clickedButton);
+      ? this.increaseCard(targetClasses, clickedButton, screenScrolled)
+      : this.decreaseCard(targetClasses, clickedButton, screenScrolled);
 
   }
 
-  increaseCard(cardClasses, btn) {
+  increaseCard(cardClasses, btn, windowHeight) {
     cardClasses.remove('small');
     btn.text = 'Close';
+
+    window.scroll(0, windowHeight);
   }
 
-  decreaseCard(cardClasses, btn) {
+  decreaseCard(cardClasses, btn, windowHeight) {
     cardClasses.add('small');
     btn.text = 'More';
+
+    window.scroll(0, windowHeight);
   }
 
 
