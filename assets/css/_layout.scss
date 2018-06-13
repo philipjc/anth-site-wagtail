@@ -1,10 +1,6 @@
 section {
   padding: 50px 40px 75px 40px;
 
-  &.breadcrumb {
-    display: none;
-  }
-
   &.intro {
     padding: 40px 40px 0;
   }
@@ -80,15 +76,6 @@ section {
 
   section {
     padding: 20px;
-  }
-
-  &.breadcrumb {
-    display: block !important;
-    padding: 5px 20px;
-
-    a {
-      text-decoration: none;
-    }
   }
 
   .page-content {
