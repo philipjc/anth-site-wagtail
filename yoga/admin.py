@@ -15,9 +15,12 @@ YogaIndex.content_panels = YogaIndex.content_panels + [
 YogaLesson.content_panels = YogaLesson.content_panels + [
     ImageChooserPanel('lesson_image'),
     FieldPanel('lesson_title'),
-    FieldPanel('lesson_date'),
     FieldPanel('lesson_level'),
+    FieldPanel('lesson_date'),
+    FieldPanel('lesson_price'),
+    FieldPanel('lesson_duration'),
     FieldPanel('lesson_desc'),
+    FieldPanel('lesson_additional_desc'),
     FieldPanel('lesson_teacher'),
     FieldPanel('loc_name'),
     FieldPanel('loc_lat'),

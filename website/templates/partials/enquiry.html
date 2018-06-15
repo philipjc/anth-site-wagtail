@@ -6,7 +6,9 @@
     <h3>Want to ask a question?</h3>
   </div>
 
-  <form class="enquiry__form" method="post" action="{% url 'enquiry:send' %}">
+{#  <form class="enquiry__form" method="post" action="{% url 'enquiry:send' %}">#}
+      <form class="enquiry__form" method="post" action="">
+
 
     {% csrf_token %}
 

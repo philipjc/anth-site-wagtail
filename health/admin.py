@@ -16,6 +16,8 @@ HealthCategory.panels = [
 HealthTreatment.content_panels = HealthTreatment.content_panels + [
     ImageChooserPanel('treatment_image'),
     FieldPanel('treatment_title'),
+    FieldPanel('treatment_price'),
+    FieldPanel('treatment_duration'),
     FieldPanel('treatment_desc'),
     FieldPanel('categories', widget=forms.CheckboxSelectMultiple),
     StreamFieldPanel('body'),

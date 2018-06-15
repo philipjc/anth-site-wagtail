@@ -35,6 +35,10 @@ class HealthTreatment(Page):
 
     treatment_title = models.CharField(max_length=200, null=True)
 
+    treatment_price = models.CharField(max_length=20, blank=True, null=True)
+
+    treatment_duration = models.CharField(max_length=20, blank=True, null=True)
+
     treatment_desc = models.CharField(max_length=500, null=True)
 
     categories = ParentalManyToManyField('health.HealthCategory', blank=True)
