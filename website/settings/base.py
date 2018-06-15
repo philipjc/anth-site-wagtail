@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'yoga',
     'health',
     'utils',
+    'enquiry',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
@@ -128,6 +129,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# ======================================
+# EMAIL
+# ======================================
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
@@ -173,8 +179,25 @@ WAGTAIL_SITE_NAME = "website"
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
 
+# ================================================
 # Auth
+# ================================================
 AUTH_USER_MODEL = 'users.CustomUser'
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+# ================================================
+# SendGrid
+# ================================================
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = config('SENDGRID_EMAIL_HOST')
+EMAIL_HOST_PASSWORD = config('SENDGRID_PASSWORD')
+EMAIL_USE_TLS = True
+
+# ================================================
+# Other Variables
+# ================================================
+CLIENT_EMAIL = 'philipcox83@gmail.com'

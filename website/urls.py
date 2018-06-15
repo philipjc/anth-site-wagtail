@@ -26,11 +26,14 @@ urlpatterns = [
 
     url(r'^search/$', search_views.search, name='search'),
 
+    url(r'^enquiry/', include('enquiry.urls'), name='enquiry'),
+
     # url(r'^login/', include('users.urls'), name='login'),
 
     path('users/', include('users.urls')),
 
     path('users/', include('django.contrib.auth.urls')),
+
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's page serving mechanism. This should be the last pattern in

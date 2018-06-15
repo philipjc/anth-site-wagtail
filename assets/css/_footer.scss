@@ -2,7 +2,7 @@
   display: flex;
   width: 100%;
   padding: 60px 0px;
-  background: darken(lavender, 10%);
+  background: darken($primary-site-color, 10%);
   position: relative;
   bottom: 0;
 
@@ -42,7 +42,7 @@
     flex-direction: column;
     width: 100%;
     padding: 0 !important;
-    background: darken(lavender, 10%);
+    background: darken($primary-site-color, 10%);
     position: relative;
     bottom: 0;
 

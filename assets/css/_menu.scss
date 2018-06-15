@@ -1,12 +1,12 @@
 .menu {
   position: fixed;
   top: 0;
-  background: lavender;
+  background: $primary-site-color;
   width: 100%;
   z-index: 15;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 5px 5px -1px darken(lavender, 10%);
+  box-shadow: 0 5px 5px -1px darken($primary-site-color, 10%);
 
   a {
     flex: 1;
@@ -15,11 +15,11 @@
     text-decoration: none;
 
     &:hover {
-      background: darken(lavender, 5%);
+      background: darken($primary-site-color, 5%);
     }
 
     &:active {
-      background: darken(lavender, 5%);
+      background: darken($primary-site-color, 5%);
     }
   }
 }

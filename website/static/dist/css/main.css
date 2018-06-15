@@ -3,6 +3,8 @@ body {
   padding: 0;
   background: lavender;
   font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .button {
@@ -23,10 +25,17 @@ a:visited {
 a:hover {
   color: #2525bd; }
 
+textarea, input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 section {
   padding: 50px 40px 75px 40px; }
   section.intro {
     padding: 40px 40px 0; }
+  section.enquiry {
+    padding: 40px; }
 
 .page-content {
   margin-top: 65px;
@@ -180,6 +189,33 @@ section {
     .cards .card {
       flex-basis: 47%;
       margin-bottom: 40px; } }
+
+.enquiry {
+  display: flex;
+  background: #9191e9; }
+  .enquiry__info {
+    flex: 1; }
+  .enquiry__form {
+    flex: 1; }
+    .enquiry__form .form_input {
+      margin-bottom: 5px; }
+      .enquiry__form .form_input:last-child {
+        margin-bottom: 0; }
+      .enquiry__form .form_input label input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: #9191e9; }
+        .enquiry__form .form_input label input:focus {
+          outline: none; }
+      .enquiry__form .form_input textarea {
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        font-size: 16px;
+        color: #9191e9; }
+        .enquiry__form .form_input textarea:focus {
+          outline: none; }
 
 .footer {
   display: flex;

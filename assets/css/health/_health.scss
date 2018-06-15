@@ -12,7 +12,7 @@
 
   h1 {
     padding: 20px 0;
-    background: lavender;
+    background: $primary-site-color;
   }
 
   .treatment {
@@ -26,7 +26,7 @@
 
     &__info {
       flex: 1;
-      background: lavender;
+      background: $primary-site-color;
 
       > p {
         padding: 25px;
@@ -62,7 +62,7 @@
 
       &__info {
         flex: 1;
-        background: lavender;
+        background: $primary-site-color;
 
         > p {
           padding: 5px;

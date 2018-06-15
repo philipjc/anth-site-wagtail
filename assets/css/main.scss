@@ -1,10 +1,14 @@
+@import "./variables";
+
 body {
   margin: 5px auto;
   padding: 0;
-  background: lavender;
+  background: $primary-site-color;
 
   font-family: 'Open Sans', sans-serif;
 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -31,10 +35,17 @@ a:hover {
   color: darken(#bcbcf2, 40%);
 }
 
-@import "./layout.scss";
-@import "./menu.scss";
-@import "./cards.scss";
-@import "./footer.scss";
-@import "./home/home.scss";
-@import "./yoga/yoga.scss";
-@import "./health/health.scss";
+textarea, input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@import "./layout";
+@import "./menu";
+@import "./cards";
+@import "enquiry";
+@import "./footer";
+@import "./home/home";
+@import "./yoga/yoga";
+@import "./health/health";
