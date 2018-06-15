@@ -22,12 +22,19 @@
 
     <section class="health-treatment">
 
-      <h1>{{ page.treatment_title }}</h1>
+      {% if page.treatment_title %}
+        <h1>{{ page.treatment_title }}</h1>
+
+      {% else %}
+
+        <h1>Health Treatment</h1>
+
+      {% endif %}
 
       <div class="treatment">
 
         <div class="treatment__desc">
-          <p>{{ page.treatment_desc }}</p>
+          {% if page.treatment_desc %}<p>{{ page.treatment_desc }}</p>{% endif %}
         </div>
 
         <div class="treatment__info">
@@ -37,6 +44,18 @@
 
           {% endif %}
         </div>
+
+        {% if page.treatment_price %}
+
+          <p>Price: {{ page.treatment_price }}</p>
+
+        {% endif %}
+
+        {% if page.treatment_duration %}
+
+          <p>Duration: {{ page.treatment_duration }}</p>
+
+        {% endif %}
 
       </div>
 

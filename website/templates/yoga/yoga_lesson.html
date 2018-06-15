@@ -11,7 +11,7 @@
     <header>
 
       <div class="overlay">
-        <h1>{{ page.page_title }}</h1>
+        {% if page.page_title %}<h1>{{ page.page_title }}</h1>{% endif %}
       </div>
 
       {% if page.page_header_image %}
@@ -30,16 +30,26 @@
 
     <section class="yoga-lesson">
 
-      <h1>Yoga lesson: {{ page.lesson_title }}, {{ page.lesson_level }}</h1>
+      {% if page.lesson_title %}
+
+        <h1>{{ page.lesson_title }}</h1>
+
+        {% else %}
+
+          <h1>Yoga Lesson</h1>
+
+      {% endif %}
 
       <div class="lesson">
         <div class="lesson__info">
-          <p>Teacher: {{ page.lesson_teacher }}</p>
-          <p>Date: {{ page.lesson_date|date }}</p>
-          <p>Time: {{ page.lesson_date|time }}</p>
-          <p>Location: {{ page.loc_name }}</p>
+          {% if page.lesson_teacher %}<p>Teacher: {{ page.lesson_teacher }}</p>{% endif%}
+          {% if page.lesson_date %}<p>Date: {{ page.lesson_date|date }}</p>{% endif %}
+          {% if page.lesson_date %}<p>Time: {{ page.lesson_date|time }}</p>{% endif %}
+          {% if page.lesson_price %}<p>Price: {{ page.lesson_price }}</p>{% endif %}
+          {% if page.lesson_duration %}<p>Duration: {{ page.lesson_duration }}</p>{% endif %}
+          {% if page.loc_name %}<p>Location: {{ page.loc_name }}</p>{% endif %}
 
-          <p>{{ page.lesson_desc }}</p>
+          {% if page.lesson_desc %}<p>{{ page.lesson_desc }}</p>{% endif %}
         </div>
         <div class="lesson__map">
 {#          <img src="http://placehold.it/300x200" srcset="http://placehold.it/300x200 300w" sizes="100vw"#}
