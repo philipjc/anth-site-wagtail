@@ -1,30 +1,37 @@
-<footer class="footer" id="contact">
+<div class="fix-bottom">
 
-  <div class="lessons column">
-    <h3>Latest Yoga Lessons</h3>
+  {% include 'partials/enquiry.html' %}
 
-    {% for l in latest_lessons %}
-      <a href="{{ l.url }}">{{ l }}</a>
-    {% endfor %}
-  </div>
+  <footer class="footer" id="contact">
 
-  <div class="treatments column">
-    <h3>Latest Health Treatments</h3>
+    <div class="lessons column">
+      <h3>Latest Yoga Lessons</h3>
 
-    {% for t in latest_treatments %}
-      <a href="{{ t.url }}">{{ t }}</a>
-    {% endfor %}
-  </div>
+      {% for l in latest_lessons %}
+        <a href="{{ l.url }}">{{ l }}</a>
+      {% endfor %}
+    </div>
 
-  <div class="contact column">
-    <h3>Contact</h3>
+    <div class="treatments column">
+      <h3>Latest Health Treatments</h3>
 
-    <p><a href="tel:07895995563">Tel: 07895 995563</a></p>
+      {% for t in latest_treatments %}
+        <a href="{{ t.url }}">{{ t }}</a>
+      {% endfor %}
+    </div>
 
-    <p><a href="mailto:anthearandell@hotmail.co.uk">Email: anthearandell@hotmail.co.uk</a></p>
+    <div class="contact column">
+      <h3>Contact</h3>
 
-    <p class="facebook"><a href="https://www.facebook.com/anthea.randell.3?ref=br_rs"><i class="fab fa-facebook-square"></i></a></p>
+      <p><a href="tel:07895995563">Tel: 07895 995563</a></p>
 
-  </div>
+      <p><a href="mailto:anthearandell@hotmail.co.uk">Email: anthearandell@hotmail.co.uk</a></p>
 
-</footer>
+      <p class="facebook"><a href="https://www.facebook.com/anthea.randell.3?ref=br_rs"><i
+              class="fab fa-facebook-square"></i></a></p>
+
+    </div>
+
+  </footer>
+
+</div>

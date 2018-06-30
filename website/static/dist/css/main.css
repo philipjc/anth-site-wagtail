@@ -1,11 +1,14 @@
 body {
   margin: 5px auto;
-  padding: 0;
   background: lavender;
   font-family: 'Open Sans', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+.fix-bottom {
+  bottom: 0;
+  width: 100%; }
 
 .button {
   text-decoration: none;
@@ -205,7 +208,8 @@ section {
         width: 100%;
         padding: 10px;
         font-size: 16px;
-        color: #9191e9; }
+        color: #9191e9;
+        border: 3px solid #6767e1; }
         .enquiry__form .form_input label input:focus {
           outline: none; }
       .enquiry__form .form_input textarea {
@@ -213,17 +217,30 @@ section {
         height: 60px;
         padding: 10px;
         font-size: 16px;
-        color: #9191e9; }
+        color: #9191e9;
+        border: 3px solid #6767e1; }
         .enquiry__form .form_input textarea:focus {
           outline: none; }
+      .enquiry__form .form_input__row {
+        display: flex;
+        justify-content: space-between; }
+        .enquiry__form .form_input__row div {
+          flex: 1;
+          padding: 5px; }
+        .enquiry__form .form_input__row button {
+          margin: 5px;
+          font-size: 20px;
+          color: #9191e9;
+          border: 3px solid #6767e1;
+          cursor: pointer; }
+  .enquiry-thanks p {
+    margin-bottom: 70px; }
 
 .footer {
   display: flex;
   width: 100%;
   padding: 60px 0px;
-  background: #bcbcf2;
-  position: relative;
-  bottom: 0; }
+  background: #bcbcf2; }
   .footer .column {
     flex: 1;
     display: flex;

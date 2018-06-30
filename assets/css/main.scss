@@ -2,7 +2,6 @@
 
 body {
   margin: 5px auto;
-  padding: 0;
   background: $primary-site-color;
 
   font-family: 'Open Sans', sans-serif;
@@ -10,6 +9,11 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.fix-bottom {
+  bottom: 0;
+  width: 100%;
 }
 
 .button {
