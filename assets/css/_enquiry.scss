@@ -71,3 +71,34 @@
     }
   }
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* Styles */
+
+  .enquiry {
+    flex-direction: column;
+
+    &__form {
+      flex: 1;
+
+      .form_input {
+        margin-bottom: 5px;
+
+        &__row {
+          display: flex;
+
+          button {
+            width: 100%;
+          }
+
+          &.double {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+
+}

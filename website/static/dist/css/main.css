@@ -236,6 +236,23 @@ section {
   .enquiry-thanks p {
     margin-bottom: 70px; }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+  /* Styles */
+  .enquiry {
+    flex-direction: column; }
+    .enquiry__form {
+      flex: 1; }
+      .enquiry__form .form_input {
+        margin-bottom: 5px; }
+        .enquiry__form .form_input__row {
+          display: flex; }
+          .enquiry__form .form_input__row button {
+            width: 100%; }
+          .enquiry__form .form_input__row.double {
+            display: flex;
+            flex-direction: column; } }
+
 .footer {
   display: flex;
   width: 100%;
